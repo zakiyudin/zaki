@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/bg4.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.introducing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    color: greenyellow;
+    word-wrap: break-word;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+}
+
+.content-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-button button{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+h1{
+    color: aquamarine;
+    margin: -5;
+}
+
+h2{
+    color: white;
+    margin: -10px;
+}
+
+.button-linkedin{
+    background-color: #77bdfd; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  margin-right: 10px;
+}
+
+.button-github{
+    background-color: #c6cdd5; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  margin-left: 10px;
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
